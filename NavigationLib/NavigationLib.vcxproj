@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1FC362BC-0E25-40E3-9B47-C12B4B23BDBB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>NavigationLib</RootNamespace>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\Build\</OutDir>
+    <IntDir>$(Configuration)\Temp\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;NAVIGATIONLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NAVIGATIONLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\MatrixLib\mesch12b\arnoldi.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\bdfactor.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\bkpfacto.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\chfactor.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\conjgrad.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\copy.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\err.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\extras.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\fft.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\givens.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\hessen.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\hsehldr.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\init.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\iter0.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\iternsym.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\itersym.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\ivecop.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\lanczos.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\lufactor.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\machine.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\matlab.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\matop.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\matrixio.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\meminfo.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\memory.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\memstat.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\mfunc.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\norm.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\otherio.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\pxop.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\qrfactor.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\schur.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\solve.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\sparse.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\sparseio.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\spbkp.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\spchfctr.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\splufctr.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\sprow.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\spswap.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\submat.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\svd.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\symmeig.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\update.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\vecop.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\version.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\zcopy.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\zfunc.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\zgivens.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\zhessen.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\zhsehldr.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\zlufctr.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\zmachine.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\zmatio.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\zmatlab.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\zmatop.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\zmemory.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\znorm.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\zqrfctr.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\zschur.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\zsolve.c" />
+    <ClCompile Include="..\MatrixLib\mesch12b\zvecop.c" />
+    <ClCompile Include="NavigationWrapper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\MatrixLib\mesch12b\err.h" />
+    <ClInclude Include="..\MatrixLib\mesch12b\iter.h" />
+    <ClInclude Include="..\MatrixLib\mesch12b\machine.h" />
+    <ClInclude Include="..\MatrixLib\mesch12b\MACHINES\MicroSoft\machine.h" />
+    <ClInclude Include="..\MatrixLib\mesch12b\matlab.h" />
+    <ClInclude Include="..\MatrixLib\mesch12b\matrix.h" />
+    <ClInclude Include="..\MatrixLib\mesch12b\matrix2.h" />
+    <ClInclude Include="..\MatrixLib\mesch12b\meminfo.h" />
+    <ClInclude Include="..\MatrixLib\mesch12b\oldnames.h" />
+    <ClInclude Include="..\MatrixLib\mesch12b\sparse.h" />
+    <ClInclude Include="..\MatrixLib\mesch12b\sparse2.h" />
+    <ClInclude Include="..\MatrixLib\mesch12b\zmatrix.h" />
+    <ClInclude Include="..\MatrixLib\mesch12b\zmatrix2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\MatrixLib\mesch12b\configure" />
+    <None Include="..\MatrixLib\mesch12b\configure.in" />
+    <None Include="..\MatrixLib\mesch12b\copyright" />
+    <None Include="..\MatrixLib\mesch12b\FILELIST" />
+    <None Include="..\MatrixLib\mesch12b\ls.dat" />
+    <None Include="..\MatrixLib\mesch12b\machine.h.in" />
+    <None Include="..\MatrixLib\mesch12b\MACHINES\MicroSoft\makefile" />
+    <None Include="..\MatrixLib\mesch12b\makefile" />
+    <None Include="..\MatrixLib\mesch12b\makefile.in" />
+    <None Include="..\MatrixLib\mesch12b\README" />
+    <None Include="..\MatrixLib\mesch12b\rk4.dat" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

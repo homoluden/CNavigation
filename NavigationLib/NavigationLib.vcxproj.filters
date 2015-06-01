@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\MatrixLib">
+      <UniqueIdentifier>{fffa618a-72ae-4241-9693-d0f0f47eedd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MatrixLib\MACHINES">
+      <UniqueIdentifier>{40259e5d-85b2-4911-98d3-3d9b4678c14f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NavigationWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\arnoldi.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\bdfactor.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\bkpfacto.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\chfactor.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\conjgrad.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\copy.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\err.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\extras.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\fft.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\givens.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\hessen.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\hsehldr.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\init.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\iter0.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\iternsym.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\itersym.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\ivecop.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\lanczos.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\lufactor.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\machine.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\matlab.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\matop.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\matrixio.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\meminfo.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\memory.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\memstat.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\mfunc.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\norm.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\otherio.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\pxop.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\qrfactor.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\schur.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\solve.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\sparse.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\sparseio.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\spbkp.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\spchfctr.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\splufctr.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\sprow.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\spswap.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\submat.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\svd.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\symmeig.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\update.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\vecop.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\version.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\zcopy.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\zfunc.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\zgivens.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\zhessen.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\zhsehldr.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\zlufctr.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\zmachine.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\zmatio.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\zmatlab.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\zmatop.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\zmemory.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\znorm.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\zqrfctr.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\zschur.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\zsolve.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatrixLib\mesch12b\zvecop.c">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\MatrixLib\mesch12b\MACHINES\MicroSoft\machine.h">
+      <Filter>Source Files\MatrixLib\MACHINES</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MatrixLib\mesch12b\err.h">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MatrixLib\mesch12b\iter.h">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MatrixLib\mesch12b\machine.h">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MatrixLib\mesch12b\matlab.h">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MatrixLib\mesch12b\matrix.h">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MatrixLib\mesch12b\matrix2.h">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MatrixLib\mesch12b\meminfo.h">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MatrixLib\mesch12b\oldnames.h">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MatrixLib\mesch12b\sparse.h">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MatrixLib\mesch12b\sparse2.h">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MatrixLib\mesch12b\zmatrix.h">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MatrixLib\mesch12b\zmatrix2.h">
+      <Filter>Source Files\MatrixLib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\MatrixLib\mesch12b\MACHINES\MicroSoft\makefile">
+      <Filter>Source Files\MatrixLib\MACHINES</Filter>
+    </None>
+    <None Include="..\MatrixLib\mesch12b\configure">
+      <Filter>Source Files\MatrixLib</Filter>
+    </None>
+    <None Include="..\MatrixLib\mesch12b\configure.in">
+      <Filter>Source Files\MatrixLib</Filter>
+    </None>
+    <None Include="..\MatrixLib\mesch12b\copyright">
+      <Filter>Source Files\MatrixLib</Filter>
+    </None>
+    <None Include="..\MatrixLib\mesch12b\FILELIST">
+      <Filter>Source Files\MatrixLib</Filter>
+    </None>
+    <None Include="..\MatrixLib\mesch12b\ls.dat">
+      <Filter>Source Files\MatrixLib</Filter>
+    </None>
+    <None Include="..\MatrixLib\mesch12b\machine.h.in">
+      <Filter>Source Files\MatrixLib</Filter>
+    </None>
+    <None Include="..\MatrixLib\mesch12b\makefile">
+      <Filter>Source Files\MatrixLib</Filter>
+    </None>
+    <None Include="..\MatrixLib\mesch12b\makefile.in">
+      <Filter>Source Files\MatrixLib</Filter>
+    </None>
+    <None Include="..\MatrixLib\mesch12b\README">
+      <Filter>Source Files\MatrixLib</Filter>
+    </None>
+    <None Include="..\MatrixLib\mesch12b\rk4.dat">
+      <Filter>Source Files\MatrixLib</Filter>
+    </None>
+  </ItemGroup>
+</Project>
